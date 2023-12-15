@@ -39,7 +39,6 @@ header {
 }
 @media screen and (max-width: 767px){
   .HeaderContainer {
-      max-width: 100%;
       margin: 0 20px;
   }
 }
@@ -62,6 +61,11 @@ a {
   display: block;
   height: 20px;
   width: auto;
+}
+@media screen and (min-width: 768px) {
+  .HeaderLogo__image--pc:hover {
+    opacity: .8; 
+  }
 }
 @media screen and (max-width: 767px) {
   .HeaderLogo__image--pc {
@@ -164,6 +168,11 @@ a {
       transition: opacity .2s;
   }
 }
+@media screen and (min-width: 768px){
+  .HeaderNavListItem:hover {
+      opacity: .8; 
+  }
+}
 
 .HeaderNavListItem__link {
   display: block;
@@ -210,6 +219,12 @@ a {
   height: 40px;
   padding: 0 20px;
 }
+@media screen and (min-width: 768px){
+  .HeaderNavListItem__button:hover {
+      opacity: .8;
+  }
+}
+
 @media screen and (max-width: 1080px){
   .HeaderNavListItem__button {
       font-size: 16px;
@@ -254,9 +269,6 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
       padding-top: 0;
       padding-bottom: 35px;
   }
-}
-.FirstView__main-image {
-  width: 100%;
 }
 
 .FirstView__main-image--sp {
@@ -373,6 +385,11 @@ width: 100%;
 .FirstViewContent__button {
     width: 100% !important;
 }
+}
+@media screen and (min-width: 768px){
+  .FirstViewContent__button:hover {
+      opacity: .8;
+  }
 }
 
 .FirstViewCaption {
