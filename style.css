@@ -230,7 +230,6 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
   margin: 0;
   padding: 0;
 }
-
 @media screen and (max-width: 1080px){
   main {
       padding-top: 60px;
@@ -334,11 +333,23 @@ display: flex;
 margin-bottom: 25px;
 }
 @media screen and (max-width: 767px){
-.FirstViewContent__images {
-    justify-content: space-between;
-    margin-bottom: 30px;
-    width: 100%;
+  .FirstViewContent__images {
+      justify-content: space-between;
+      margin-bottom: 30px;
+      width: 100%;
 }
+}
+
+.FirstViewContent__images img {
+  margin-right: 8px;
+}
+@media screen and (max-width: 767px){
+  .FirstViewContent__images img {
+      width: 27.5%;
+  }
+}
+.FirstViewContent__images img:nth-of-type(2) {
+  width: 40%;
 }
 
 .FirstViewContent__button {
@@ -498,4 +509,13 @@ width: 158px;
 .About__reskilling-logo {
     margin: auto;
 }
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
